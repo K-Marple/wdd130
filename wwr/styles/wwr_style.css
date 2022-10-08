@@ -2,3 +2,19 @@
     width: 1600px;
     margin: 0 auto;
 }
+
+nav a {
+    text-align: center;
+}
+
+#hero_msg h1, #hero_msg h4 {
+    text-align: center;
+}
+
+.button_box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
