@@ -288,7 +288,7 @@ h2 {
 }
 
 .history {
-    grid-column: 1/6;
+    grid-column: 2/6;
     grid-row: 2/3;
     text-align: center;
     color: #f9ffc8;
