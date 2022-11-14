@@ -2,7 +2,7 @@
 
 /* Home Page */
 
-#content {
+#content, #content_pt2 {
     width: 1200px;
     margin: 0 auto;
     font-family: "Roboto Mono", Courier, monospace;
