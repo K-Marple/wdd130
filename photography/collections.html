@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylessheet" href="photo_style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="photo_index.html" id="logo_link">
+                <img class="logo" src="images/photography_logo.png" alt="Meredith Pearl Photography">
+            </a>
+            <nav>
+                <a href="collections.html">Collections</a>
+                <a href="requests.html">Request Photos</a>
+            </nav>
+        </header>
+        <div id="collections">
+            <h2>Browse our beautiful collections!</h2>
+            <img class="places_img" src="images/collections/places_cover.jpg" alt="Train Station">
+            <img class="parks_img" src="images/collections/park_cover.jpg" alt="Yosemite Valley Peak">
+            <img class="outdoors_img" src="images/collections/outdoor_cover.jpg" alt="Snowy Bridge">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCollection(event, 'Towns/Places')">Towns/Places</button>
+                <button class="tablinks" onclick="openCollection(event, 'National and State Parks')">National and State Parks</button>
+                <button class="tablinks" onclick="openCollection(event, 'Outdoors')">Outdoors</button>
+                <button class="tablinks" onclick="openCollection(event, 'Other')">Other</button>
+            </div>
+            <!-- Tab content -->
+            <div id="Towns/Places" class="tabcontent">
+                
+            </div>
+        </div>
+        <footer>
+            <p class="company_name">Meredith Pearl Photography &copy; 2022</p>
+            <p><a href="site_plan_photo.html">Site Plan</a></p>
+        </footer>
+    </div>
+</body>
+</html>
