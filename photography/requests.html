@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meredith Pearl Photography</title>
+    <link rel="stylessheet" href="photo_style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="photo_index.html" id="logo_link">
+                <img class="logo" src="images/photography_logo.png" alt="Meredith Pearl Photography">
+            </a>
+            <nav>
+                <a href="collections.html">Collections</a>
+                <a href="requests.html">Request Photos</a>
+            </nav>
+        </header>
+        <div id="title">
+            <img class="request" src="images/request/request.jpg" alt="Rocky River">
+            <h2 class="title_msg">Didn’t see something? Let me know!</h2>
+        </div>
+        <div id="form">
+            <p class="form_msg">
+                I strive to share unique and beautiful pictures of this earth with all of you. However, I haven’t had the chance to travel very 
+                far to obtain these photos, so the collections are somewhat limited. If there is a place you are wishing to see, let me know 
+                and I will do my best to provide them promptly. Requests for anything on the west coast of the United States will be answered 
+                quickest (because that’s where I live), others will take time. Thank you for your patience!
+            </p>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="place">Place</label>
+                        <input type="text" id="place" name="user_place" />
+                    </li>
+                    <li>
+                        <label for="mail">E-mail</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="info">
+            <p>
+                If you’d like to know more about any photo in one of the collections, please contact me and I will give you all that I know 
+                about it, location, or history or whatever. If you are interested in obtaining any of these photos to hang on your walls, 
+                you can put it in the form or email me at meredithpearl.photography@gmail.com. 
+            </p>
+        </div>
+        <div id="crazy">
+            <img class="crazy_img" src="images/request/crazy.jpg" alt="Fireworks and Minifigures">
+            <p>
+                You can also request a “crazy” idea! (But nothing too crazy 😉) For example, things that play with lights or fireworks I can 
+                give you descent results (see the Other collection for some fireworks photos like the one to the left). I’m willing to try 
+                almost anything though. 
+            </p>
+        </div>
+        <footer>
+            <p class="company_name">Meredith Pearl Photography &copy; 2022</p>
+            <p><a href="site_plan_photo.html">Site Plan</a></p>
+        </footer>
+    </div>
+</body>
+</html>
