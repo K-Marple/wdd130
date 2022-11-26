@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Comic+Neue&family=Marck+Script&family=Satisfy&display=swap');
+
+/* All pages */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "Itim", "Comic Neue", sans-serif;
+}
+
+nav a {
+    text-align: center;
+    color: #594236;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav:hover {
+    background-color: #1a5e63;
+    color: #f6f5ae;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Home page */
