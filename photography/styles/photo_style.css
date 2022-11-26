@@ -2,9 +2,10 @@
 
 /* All pages */
 #content {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     font-family: "Itim", "Comic Neue", sans-serif;
+    background-color: #fbfefb;
 }
 
 nav a {
@@ -12,9 +13,11 @@ nav a {
     color: #594236;
     text-decoration: none;
     padding: 35px;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 
-nav:hover {
+nav a:hover {
     background-color: #1a5e63;
     color: #f6f5ae;
 }
@@ -24,4 +27,43 @@ nav {
     justify-content: space-around;
 }
 
+#logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
 /* Home page */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 100px;
+}
+
+#hero_msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-family: "Satisfy", "Marck Script", sans-serif;
+    color: #1a5e63;
+    font-size: 22px;
+}
+
+#hero_box {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#hero_img {
+    width: 100%;
+}
