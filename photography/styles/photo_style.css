@@ -18,7 +18,7 @@ nav a {
     text-align: center;
     color: #594236;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
 }
 
 nav a:hover {
@@ -36,10 +36,28 @@ nav {
 #logo_link {
     justify-self: center;
     align-self: center;
+    position: relative;
 }
 
 .logo {
     width: 175px;
+}
+
+.text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+    opacity: 0;
+}
+
+#logo_link:hover .logo {
+    opacity: 0;
+}
+
+#logo_link:hover .text {
+    opacity: 1;
 }
 
 /* Home page */
