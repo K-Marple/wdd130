@@ -7,6 +7,16 @@ body {
     background-color: #3d3600;
     font-family: 'Trebuchet MS', monospace;
 }
+
+/* Header */
+header {
+    background-color: #c2a366;
+    font-family: 'Courier New', monospace;
+    color: #3d3600;
+    text-align: center;
+    font-size: 2em;
+    padding: 50px;
+}
   
 /* The actual timeline (the vertical ruler) */
 .timeline {
