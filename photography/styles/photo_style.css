@@ -60,6 +60,26 @@ nav {
     opacity: 1;
 }
 
+footer {
+    background-color: #1a5e63;
+    color: #f6f5ae;
+    padding: 25px 50px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #f6f5ae;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fbfefb;
+    text-decoration: underline;
+}
+
 /* Home page */
 #hero {
     display: grid;
@@ -82,6 +102,7 @@ nav {
 
 #hero_img {
     width: 100%;
+    border-radius: 3px;
 }
 
 .about {
@@ -103,29 +124,152 @@ nav {
     grid-row: 2/5;
     z-index: -1;
     width: 100%;
-}
-
-footer {
-    background-color: #1a5e63;
-    color: #f6f5ae;
-    padding: 25px 50px;
-    display: flex;
-    margin-top: 100px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer a {
-    color: #f6f5ae;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #fbfefb;
-    text-decoration: underline;
+    border-radius: 3px;
 }
 
 /* Collections page */
 
 
 /* Requests page */
+#title {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-top: 25px;
+}
+
+.request {
+    grid-column: 1/2;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.title_msg {
+    font-family: "Satisfy", "Marck Script", sans-serif;
+    color: #1a5e63;
+    text-align: center; 
+    padding: 100px;
+    align-self: center;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1a5e63;
+    margin: 50px 0px;
+    padding: 20px;
+}
+
+.form_msg {
+    grid-column: 1/2;
+    padding: 50px;
+    color: #f6f5ae;
+    align-self: center;
+}
+
+/* Form */
+form {
+    grid-column: 2/3;
+    width: 450px;
+    margin: 0 auto;
+    /* Form outline */
+    padding: 1em;
+    border: 2px solid #f6f5ae;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: block;
+    width: 60px;
+    text-align: left;
+    font-size: .75em;
+    color: #f6f5ae;
+}
+
+input, textarea {
+    /* To make sure all text fields have the same font settings
+    By default, textareas have a monospace font */
+    font: 1em 'Itim';
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match for field borders */
+    border: 1px solid #f6f5ae;
+}
+
+input:focus, textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #1a5e63;
+}
+
+textarea {
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    background-color: #f6f5ae;
+	color: #594236;
+	border: 1px solid #594236;
+    border-radius: 5px;
+	height: 40px;
+	width: 120px;
+	font: bold 15px "Itim", "Comic Neue", sans-serif;
+    float: right;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+#feedback {
+    background-color: #fbfefb;
+    color: #594236;
+    border-radius: 1em;
+    position: absolute;
+    left: 67%;
+    right: 20%;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    /* make this element invisible until we are ready for it */
+    display: none;
+}
+
+#info {
+    color: #594236;
+    text-align: center;
+    padding: 0px 200px;
+}
+
+#crazy {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-top: 50px;
+}
+
+.crazy_img {
+    grid-column: 1/2;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#crazy p {
+    grid-column: 2/3;
+    color: #594236;
+    align-self: center;
+    padding: 50px;
+}

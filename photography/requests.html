@@ -34,19 +34,19 @@
             <form action="/my-handling-form-page" method="post">
                 <ul>
                     <li>
-                        <label for="place">Place</label>
                         <input type="text" id="place" name="user_place" />
+                        <label for="place">Place</label>
                     </li>
                     <li>
-                        <label for="mail">E-mail</label>
                         <input type="email" id="mail" name="user_email" />
+                        <label for="mail">E-mail</label>
                     </li>
                     <li>
-                        <label for="msg">Message</label>
                         <textarea id="msg" name="user_message"></textarea>
+                        <label for="msg">Message</label>
                     </li>
                     <li class="button">
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="button">Submit</button>
                     </li>
                 </ul>
             </form>
@@ -64,6 +64,10 @@
                 You can also request a “crazy” idea! (But nothing too crazy 😉) For example, things that play with lights or fireworks I can 
                 give you descent results (see the Other collection for some fireworks photos like the one to the left). I’m willing to try 
                 almost anything though. 
+                <br><br>
+                Thank you so much for taking the time to look through my photos. I hope that you enjoyed them as much as I do! I will 
+                periodically update the collections with pictures I have taken (from requests or just in general). Please come back and visit 
+                again to see what's new!
             </p>
         </div>
         <footer>
@@ -81,11 +85,9 @@
             // stop the form from doing the default action.
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello! Thank you for your request. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Thank you for your request!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
         });
     </script>
 </body>
