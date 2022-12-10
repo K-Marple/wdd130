@@ -437,10 +437,11 @@ textarea {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     #hero, .about, #title, #form, #crazy {
         display: block;
         height: auto;
+        font-size: .8em;
     }
 
     nav, footer {
@@ -462,5 +463,19 @@ textarea {
         margin: 0 auto;
     }
 
+    img {
+        max-width: 80%;
+    }
 
+    p {
+        width: 80%;
+    }
+
+    h2 {
+        width: 80%;
+    }
+
+    #collection {
+        width: 80%;
+    }
 }
