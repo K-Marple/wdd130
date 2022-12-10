@@ -430,3 +430,32 @@ textarea {
     align-self: center;
     padding: 50px;
 }
+
+
+@media screen and (max-width: 900px) {
+    #hero, .about, #title, #form, #crazy {
+        display: block;
+        height: auto;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    #hero, #hero_msg {
+        margin-top: 0;
+    }
+
+    .wildflowers {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
