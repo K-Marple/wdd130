@@ -20,305 +20,333 @@
             </nav>
         </header>
         <div id="collections">
-            <h2>Browse our beautiful collections!</h2>
+            <h2 class="collect_title">Browse our beautiful collections!</h2>
             <img class="places_img" src="images/collections/places_cover.jpg" alt="Train Station">
             <img class="parks_img" src="images/collections/park_cover.jpg" alt="Yosemite Valley Peak">
             <img class="outdoors_img" src="images/collections/outdoor_cover.jpg" alt="Snowy Bridge">
             <!-- Tab links -->
             <div class="tab">
-                <button class="tablinks" onclick="openCollection(event, 'Towns/Places')">Towns/Places</button>
-                <button class="tablinks" onclick="openCollection(event, 'National and State Parks')">National and State Parks</button>
-                <button class="tablinks" onclick="openCollection(event, 'Outdoors')">Outdoors</button>
-                <button class="tablinks" onclick="openCollection(event, 'Other')">Other</button>
+                <button id="places_link" class="tablinks" onclick="openCollection(event, 'Towns/Places')">Towns/Places</button>
+                <button id="parks_link" class="tablinks" onclick="openCollection(event, 'National and State Parks')">National and State Parks</button>
+                <button id="outdoors_link" class="tablinks" onclick="openCollection(event, 'Outdoors')">Outdoors</button>
+                <button id="other_link" class="tablinks" onclick="openCollection(event, 'Other')">Other</button>
             </div>
             <!-- Tab content -->
             <div id="Towns/Places" class="tabcontent">
-                <div class="column">
-                    <img src="images/collections/places/clovis1.jpg">
-                    <img src="images/collections/places/clovis2.jpg">
-                    <img src="images/collections/places/clovis3.jpg">
-                    <img src="images/collections/places/clovis4.jpg">
-                    <img src="images/collections/places/clovis5.jpg">
-                    <img src="images/collections/places/clovis6.jpg">
-                    <img src="images/collections/places/clovis7.jpg">
-                    <img src="images/collections/places/clovis8.jpg">
-                    <img src="images/collections/places/clovis9.jpg">
-                    <img src="images/collections/places/clovis10.jpg">
-                    <img src="images/collections/places/clovis11.jpg">
-                    <img src="images/collections/places/clovis12.jpg">
-                    <img src="images/collections/places/clovis13.jpg">
-                    <img src="images/collections/places/clovis14.jpg">
-                    <img src="images/collections/places/clovis15.jpg">
-                    <img src="images/collections/places/clovis16.jpg">
-                    <img src="images/collections/places/clovis17.jpg">
-                    <img src="images/collections/places/clovis18.jpg">
-                    <img src="images/collections/places/clovis19.jpg">
-                    <img src="images/collections/places/clovis20.jpg">
-                    <img src="images/collections/places/clovis21.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/places/garden1.jpg">
-                    <img src="images/collections/places/garden2.jpg">
-                    <img src="images/collections/places/garden3.jpg">
-                    <img src="images/collections/places/garden4.jpg">
-                    <img src="images/collections/places/garden5.jpg">
-                    <img src="images/collections/places/garden6.jpg">
-                    <img src="images/collections/places/garden7.jpg">
-                    <img src="images/collections/places/garden8.jpg">
-                    <img src="images/collections/places/garden9.jpg">
-                    <img src="images/collections/places/garden10.jpg">
-                    <img src="images/collections/places/garden11.jpg">
-                    <img src="images/collections/places/garden12.jpg">
-                    <img src="images/collections/places/garden13.jpg">
-                    <img src="images/collections/places/garden14.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/places/kc1.jpg">
-                    <img src="images/collections/places/kc2.jpg">
-                    <img src="images/collections/places/kc3.jpg">
-                    <img src="images/collections/places/kc4.jpg">
-                    <img src="images/collections/places/kc5.jpg">
-                    <img src="images/collections/places/vegas1.jpg">
-                    <img src="images/collections/places/vegas2.jpg">
-                    <img src="images/collections/places/vagas3.jpg">
-                    <img src="images/collections/places/vagas4.jpg">
-                    <img src="images/collections/places/vagas5.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/places/monterey1.jpg">
-                    <img src="images/collections/places/monterey2.jpg">
-                    <img src="images/collections/places/monterey3.jpg">
-                    <img src="images/collections/places/monterey4.jpg">
-                    <img src="images/collections/places/monterey5.jpg">
-                    <img src="images/collections/places/monterey6.jpg">
-                    <img src="images/collections/places/monterey7.jpg">
-                    <img src="images/collections/places/monterey8.jpg">
-                    <img src="images/collections/places/monterey9.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/places/sandiego1.jpg">
-                    <img src="images/collections/places/sandiego2.jpg">
-                    <img src="images/collections/places/sandiego3.jpg">
-                    <img src="images/collections/places/sandiego4.jpg">
-                    <img src="images/collections/places/sandiego5.jpg">
-                    <img src="images/collections/places/sandiego6.jpg">
-                    <img src="images/collections/places/sandiego7.jpg">
-                    <img src="images/collections/places/sandiego8.jpg">
-                    <img src="images/collections/places/sandiego9.jpg">
+                <button onclick="one()">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/collections/places/clovis1.jpg">
+                        <img src="images/collections/places/clovis2.jpg">
+                        <img src="images/collections/places/clovis3.jpg">
+                        <img src="images/collections/places/clovis4.jpg">
+                        <img src="images/collections/places/clovis5.jpg">
+                        <img src="images/collections/places/clovis6.jpg">
+                        <img src="images/collections/places/clovis7.jpg">
+                        <img src="images/collections/places/clovis8.jpg">
+                        <img src="images/collections/places/clovis9.jpg">
+                        <img src="images/collections/places/clovis10.jpg">
+                        <img src="images/collections/places/clovis11.jpg">
+                        <img src="images/collections/places/clovis12.jpg">
+                        <img src="images/collections/places/clovis13.jpg">
+                        <img src="images/collections/places/clovis14.jpg">
+                        <img src="images/collections/places/clovis15.jpg">
+                    </div>
+                    <div calss="column">
+                        <img src="images/collections/places/clovis16.jpg">
+                        <img src="images/collections/places/clovis17.jpg">
+                        <img src="images/collections/places/clovis18.jpg">
+                        <img src="images/collections/places/clovis19.jpg">
+                        <img src="images/collections/places/clovis20.jpg">
+                        <img src="images/collections/places/clovis21.jpg">
+                        <img src="images/collections/places/garden1.jpg">
+                        <img src="images/collections/places/garden2.jpg">
+                        <img src="images/collections/places/garden3.jpg">
+                        <img src="images/collections/places/garden4.jpg">
+                        <img src="images/collections/places/garden5.jpg">
+                        <img src="images/collections/places/garden6.jpg">
+                        <img src="images/collections/places/garden7.jpg">
+                        <img src="images/collections/places/garden8.jpg">
+                        <img src="images/collections/places/garden9.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/places/garden10.jpg">
+                        <img src="images/collections/places/garden11.jpg">
+                        <img src="images/collections/places/garden12.jpg">
+                        <img src="images/collections/places/garden13.jpg">
+                        <img src="images/collections/places/garden14.jpg">
+                        <img src="images/collections/places/kc1.jpg">
+                        <img src="images/collections/places/kc2.jpg">
+                        <img src="images/collections/places/kc3.jpg">
+                        <img src="images/collections/places/kc4.jpg">
+                        <img src="images/collections/places/kc5.jpg">
+                        <img src="images/collections/places/vegas1.jpg">
+                        <img src="images/collections/places/vegas2.jpg">
+                        <img src="images/collections/places/vagas3.jpg">
+                        <img src="images/collections/places/vagas4.jpg">
+                        <img src="images/collections/places/vagas5.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/places/monterey1.jpg">
+                        <img src="images/collections/places/monterey2.jpg">
+                        <img src="images/collections/places/monterey3.jpg">
+                        <img src="images/collections/places/monterey4.jpg">
+                        <img src="images/collections/places/monterey5.jpg">
+                        <img src="images/collections/places/monterey6.jpg">
+                        <img src="images/collections/places/monterey7.jpg">
+                        <img src="images/collections/places/monterey8.jpg">
+                        <img src="images/collections/places/monterey9.jpg">
+                        <img src="images/collections/places/sandiego1.jpg">
+                        <img src="images/collections/places/sandiego2.jpg">
+                        <img src="images/collections/places/sandiego3.jpg">
+                        <img src="images/collections/places/sandiego4.jpg">
+                        <img src="images/collections/places/sandiego5.jpg">
+                        <img src="images/collections/places/sandiego6.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/places/sandiego7.jpg">
+                        <img src="images/collections/places/sandiego8.jpg">
+                        <img src="images/collections/places/sandiego9.jpg">
+                    </div>
                 </div>
                 <span onclick="this.parentElement.style.display='none'">x</span>
             </div>
             <div id="National and State Parks" class="tabcontent">
-                <div class="column">
-                    <img src="images/collections/parks/joaquin1.jpg">
-                    <img src="images/collections/parks/joaquin2.jpg">
-                    <img src="images/collections/parks/joaquin3.jpg">
-                    <img src="images/collections/parks/joaquin4.jpg">
-                    <img src="images/collections/parks/joaquin5.jpg">
-                    <img src="images/collections/parks/joaquin6.jpg">
-                    <img src="images/collections/parks/joaquin7.jpg">
-                    <img src="images/collections/parks/joaquin8.jpg">
-                    <img src="images/collections/parks/joaquin9.jpg">
-                    <img src="images/collections/parks/joaquin10.jpg">
-                    <img src="images/collections/parks/joaquin11.jpg">
-                    <img src="images/collections/parks/joaquin12.jpg">
-                    <img src="images/collections/parks/joaquin13.jpg">
-                    <img src="images/collections/parks/joaquin14.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/parks/sequoia1.jpg">
-                    <img src="images/collections/parks/sequoia2.jpg">
-                    <img src="images/collections/parks/sequoia3.jpg">
-                    <img src="images/collections/parks/sequoia4.jpg">
-                    <img src="images/collections/parks/sequoia5.jpg">
-                    <img src="images/collections/parks/sequoia6.jpg">
-                    <img src="images/collections/parks/sequoia7.jpg">
-                    <img src="images/collections/parks/sequoia8.jpg">
-                    <img src="images/collections/parks/sequoia9.jpg">
-                    <img src="images/collections/parks/sequoia10.jpg">
-                    <img src="images/collections/parks/sequoia11.jpg">
-                    <img src="images/collections/parks/sequoia12.jpg">
-                    <img src="images/collections/parks/sequoia13.jpg">
-                    <img src="images/collections/parks/sequoia14.jpg">
-                    <img src="images/collections/parks/sequoia15.jpg">
-                    <img src="images/collections/parks/sequoia16.jpg">
-                    <img src="images/collections/parks/sequoia17.jpg">
-                    <img src="images/collections/parks/sequoia18.jpg">
-                    <img src="images/collections/parks/sequoia19.jpg">
-                    <img src="images/collections/parks/sequoia20.jpg">
-                    <img src="images/collections/parks/sequoia21.jpg">
-                    <img src="images/collections/parks/sequoia22.jpg">
-                    <img src="images/collections/parks/sequoia23.jpg">
-                    <img src="images/collections/parks/sequoia24.jpg">
-                    <img src="images/collections/parks/sequoia25.jpg">
-                </div>    
-                <div class="column">
-                    <img src="images/collections/parks/sequoia26.jpg">
-                    <img src="images/collections/parks/sequoia27.jpg">
-                    <img src="images/collections/parks/sequoia28.jpg">
-                    <img src="images/collections/parks/sequoia29.jpg">
-                    <img src="images/collections/parks/sequoia30.jpg">
-                    <img src="images/collections/parks/sequoia31.jpg">
-                    <img src="images/collections/parks/sequoia32.jpg">
-                    <img src="images/collections/parks/sequoia33.jpg">
-                    <img src="images/collections/parks/sequoia34.jpg">
-                    <img src="images/collections/parks/sequoia35.jpg">
-                    <img src="images/collections/parks/sequoia36.jpg">
-                    <img src="images/collections/parks/sequoia37.jpg">
-                    <img src="images/collections/parks/sequoia38.jpg">
-                    <img src="images/collections/parks/sequoia39.jpg">
-                    <img src="images/collections/parks/sequoia40.jpg">
-                    <img src="images/collections/parks/sequoia41.jpg">
-                    <img src="images/collections/parks/sequoia42.jpg">
-                    <img src="images/collections/parks/sequoia43.jpg">
-                    <img src="images/collections/parks/sequoia44.jpg">
-                    <img src="images/collections/parks/sequoia45.jpg">
-                    <img src="images/collections/parks/sequoia46.jpg">
-                    <img src="images/collections/parks/sequoia47.jpg">
-                    <img src="images/collections/parks/sequoia48.jpg">
-                    <img src="images/collections/parks/sequoia49.jpg">
-                    <img src="images/collections/parks/sequoia50.jpg">
-                    <img src="images/collections/parks/sequoia51.jpg">
-                    <img src="images/collections/parks/sequoia52.jpg">
-                    <img src="images/collections/parks/sequoia53.jpg">
-                    <img src="images/collections/parks/sequoia54.jpg">
-                    <img src="images/collections/parks/sequoia55.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/parks/yosemite1.jpg">
-                    <img src="images/collections/parks/yosemite2.jpg">
-                    <img src="images/collections/parks/yosemite3.jpg">
-                    <img src="images/collections/parks/yosemite4.jpg">
-                    <img src="images/collections/parks/yosemite5.jpg">
-                    <img src="images/collections/parks/yosemite6.jpg">
-                    <img src="images/collections/parks/yosemite7.jpg">
-                    <img src="images/collections/parks/yosemite8.jpg">
-                    <img src="images/collections/parks/yosemite9.jpg">
-                    <img src="images/collections/parks/yosemite10.jpg">
-                    <img src="images/collections/parks/yosemite11.jpg">
-                    <img src="images/collections/parks/yosemite12.jpg">
-                    <img src="images/collections/parks/yosemite13.jpg">
-                    <img src="images/collections/parks/yosemite14.jpg">
-                    <img src="images/collections/parks/yosemite15.jpg">
-                    <img src="images/collections/parks/yosemite16.jpg">
-                    <img src="images/collections/parks/yosemite17.jpg">
-                    <img src="images/collections/parks/yosemite18.jpg">
-                    <img src="images/collections/parks/yosemite19.jpg">
-                    <img src="images/collections/parks/yosemite20.jpg">
-                    <img src="images/collections/parks/yosemite21.jpg">
-                    <img src="images/collections/parks/yosemite22.jpg">
-                    <img src="images/collections/parks/yosemite23.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/parks/yosemite24.jpg">
-                    <img src="images/collections/parks/yosemite25.jpg">
-                    <img src="images/collections/parks/yosemite26.jpg">
-                    <img src="images/collections/parks/yosemite27.jpg">
-                    <img src="images/collections/parks/yosemite28.jpg">
-                    <img src="images/collections/parks/yosemite29.jpg">
-                    <img src="images/collections/parks/yosemite30.jpg">
-                    <img src="images/collections/parks/yosemite31.jpg">
-                    <img src="images/collections/parks/yosemite32.jpg">
-                    <img src="images/collections/parks/yosemite33.jpg">
-                    <img src="images/collections/parks/yosemite34.jpg">
-                    <img src="images/collections/parks/yosemite35.jpg">
-                    <img src="images/collections/parks/yosemite36.jpg">
-                    <img src="images/collections/parks/yosemite37.jpg">
-                    <img src="images/collections/parks/yosemite38.jpg">
-                    <img src="images/collections/parks/yosemite39.jpg">
-                    <img src="images/collections/parks/yosemite40.jpg">
-                    <img src="images/collections/parks/yosemite41.jpg">
-                    <img src="images/collections/parks/yosemite42.jpg">
-                    <img src="images/collections/parks/yosemite43.jpg">
+                <button onclick="one()">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/collections/parks/joaquin1.jpg">
+                        <img src="images/collections/parks/joaquin2.jpg">
+                        <img src="images/collections/parks/joaquin3.jpg">
+                        <img src="images/collections/parks/joaquin4.jpg">
+                        <img src="images/collections/parks/joaquin5.jpg">
+                        <img src="images/collections/parks/joaquin6.jpg">
+                        <img src="images/collections/parks/joaquin7.jpg">
+                        <img src="images/collections/parks/joaquin8.jpg">
+                        <img src="images/collections/parks/joaquin9.jpg">
+                        <img src="images/collections/parks/joaquin10.jpg">
+                        <img src="images/collections/parks/joaquin11.jpg">
+                        <img src="images/collections/parks/joaquin12.jpg">
+                        <img src="images/collections/parks/joaquin13.jpg">
+                        <img src="images/collections/parks/joaquin14.jpg">
+                        <img src="images/collections/parks/sequoia1.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/parks/sequoia2.jpg">
+                        <img src="images/collections/parks/sequoia3.jpg">
+                        <img src="images/collections/parks/sequoia4.jpg">
+                        <img src="images/collections/parks/sequoia5.jpg">
+                        <img src="images/collections/parks/sequoia6.jpg">
+                        <img src="images/collections/parks/sequoia7.jpg">
+                        <img src="images/collections/parks/sequoia8.jpg">
+                        <img src="images/collections/parks/sequoia9.jpg">
+                        <img src="images/collections/parks/sequoia10.jpg">
+                        <img src="images/collections/parks/sequoia11.jpg">
+                        <img src="images/collections/parks/sequoia12.jpg">
+                        <img src="images/collections/parks/sequoia13.jpg">
+                        <img src="images/collections/parks/sequoia14.jpg">
+                        <img src="images/collections/parks/sequoia15.jpg">
+                        <img src="images/collections/parks/sequoia16.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/parks/sequoia17.jpg">
+                        <img src="images/collections/parks/sequoia18.jpg">
+                        <img src="images/collections/parks/sequoia19.jpg">
+                        <img src="images/collections/parks/sequoia20.jpg">
+                        <img src="images/collections/parks/sequoia21.jpg">
+                        <img src="images/collections/parks/sequoia22.jpg">
+                        <img src="images/collections/parks/sequoia23.jpg">
+                        <img src="images/collections/parks/sequoia24.jpg">
+                        <img src="images/collections/parks/sequoia25.jpg">
+                        <img src="images/collections/parks/sequoia26.jpg">
+                        <img src="images/collections/parks/sequoia27.jpg">
+                        <img src="images/collections/parks/sequoia28.jpg">
+                        <img src="images/collections/parks/sequoia29.jpg">
+                        <img src="images/collections/parks/sequoia30.jpg">
+                        <img src="images/collections/parks/sequoia31.jpg">
+                    </div>    
+                    <div class="column">
+                        <img src="images/collections/parks/sequoia32.jpg">
+                        <img src="images/collections/parks/sequoia33.jpg">
+                        <img src="images/collections/parks/sequoia34.jpg">
+                        <img src="images/collections/parks/sequoia35.jpg">
+                        <img src="images/collections/parks/sequoia36.jpg">
+                        <img src="images/collections/parks/sequoia37.jpg">
+                        <img src="images/collections/parks/sequoia38.jpg">
+                        <img src="images/collections/parks/sequoia39.jpg">
+                        <img src="images/collections/parks/sequoia40.jpg">
+                        <img src="images/collections/parks/sequoia41.jpg">
+                        <img src="images/collections/parks/sequoia42.jpg">
+                        <img src="images/collections/parks/sequoia43.jpg">
+                        <img src="images/collections/parks/sequoia44.jpg">
+                        <img src="images/collections/parks/sequoia45.jpg">
+                        <img src="images/collections/parks/sequoia46.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/parks/sequoia47.jpg">
+                        <img src="images/collections/parks/sequoia48.jpg">
+                        <img src="images/collections/parks/sequoia49.jpg">
+                        <img src="images/collections/parks/sequoia50.jpg">
+                        <img src="images/collections/parks/sequoia51.jpg">
+                        <img src="images/collections/parks/sequoia52.jpg">
+                        <img src="images/collections/parks/sequoia53.jpg">
+                        <img src="images/collections/parks/sequoia54.jpg">
+                        <img src="images/collections/parks/sequoia55.jpg">
+                        <img src="images/collections/parks/yosemite1.jpg">
+                        <img src="images/collections/parks/yosemite2.jpg">
+                        <img src="images/collections/parks/yosemite3.jpg">
+                        <img src="images/collections/parks/yosemite4.jpg">
+                        <img src="images/collections/parks/yosemite5.jpg">
+                        <img src="images/collections/parks/yosemite6.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/parks/yosemite7.jpg">
+                        <img src="images/collections/parks/yosemite8.jpg">
+                        <img src="images/collections/parks/yosemite9.jpg">
+                        <img src="images/collections/parks/yosemite10.jpg">
+                        <img src="images/collections/parks/yosemite11.jpg">
+                        <img src="images/collections/parks/yosemite12.jpg">
+                        <img src="images/collections/parks/yosemite13.jpg">
+                        <img src="images/collections/parks/yosemite14.jpg">
+                        <img src="images/collections/parks/yosemite15.jpg">
+                        <img src="images/collections/parks/yosemite16.jpg">
+                        <img src="images/collections/parks/yosemite17.jpg">
+                        <img src="images/collections/parks/yosemite18.jpg">
+                        <img src="images/collections/parks/yosemite19.jpg">
+                        <img src="images/collections/parks/yosemite20.jpg">
+                        <img src="images/collections/parks/yosemite21.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/parks/yosemite22.jpg">
+                        <img src="images/collections/parks/yosemite23.jpg">
+                        <img src="images/collections/parks/yosemite24.jpg">
+                        <img src="images/collections/parks/yosemite25.jpg">
+                        <img src="images/collections/parks/yosemite26.jpg">
+                        <img src="images/collections/parks/yosemite27.jpg">
+                        <img src="images/collections/parks/yosemite28.jpg">
+                        <img src="images/collections/parks/yosemite29.jpg">
+                        <img src="images/collections/parks/yosemite30.jpg">
+                        <img src="images/collections/parks/yosemite31.jpg">
+                        <img src="images/collections/parks/yosemite32.jpg">
+                        <img src="images/collections/parks/yosemite33.jpg">
+                        <img src="images/collections/parks/yosemite34.jpg">
+                        <img src="images/collections/parks/yosemite35.jpg">
+                        <img src="images/collections/parks/yosemite36.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/parks/yosemite37.jpg">
+                        <img src="images/collections/parks/yosemite38.jpg">
+                        <img src="images/collections/parks/yosemite39.jpg">
+                        <img src="images/collections/parks/yosemite40.jpg">
+                        <img src="images/collections/parks/yosemite41.jpg">
+                        <img src="images/collections/parks/yosemite42.jpg">
+                        <img src="images/collections/parks/yosemite43.jpg">
+                    </div>
                 </div>
                 <span onclick="this.parentElement.style.display='none'">x</span>
             </div>
             <div id="Outdoors" class="tabcontent">
-                <div class="column">
-                    <img src="images/collections/outdoors/flowers1.jpg">
-                    <img src="images/collections/outdoors/flowers2.jpg">
-                    <img src="images/collections/outdoors/flowers3.jpg">
-                    <img src="images/collections/outdoors/flowers4.jpg">
-                    <img src="images/collections/outdoors/flowers5.jpg">
-                    <img src="images/collections/outdoors/flowers6.jpg">
-                    <img src="images/collections/outdoors/flowers7.jpg">
-                    <img src="images/collections/outdoors/flowers8.jpg">
-                    <img src="images/collections/outdoors/flowers9.jpg">
-                    <img src="images/collections/outdoors/flowers10.jpg">
-                    <img src="images/collections/outdoors/flowers11.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/outdoors/general1.jpg">
-                    <img src="images/collections/outdoors/general2.jpg">
-                    <img src="images/collections/outdoors/general3.jpg">
-                    <img src="images/collections/outdoors/general4.jpg">
-                    <img src="images/collections/outdoors/general5.jpg">
-                    <img src="images/collections/outdoors/general6.jpg">
-                    <img src="images/collections/outdoors/general7.jpg">
-                    <img src="images/collections/outdoors/general8.jpg">
-                    <img src="images/collections/outdoors/general9.jpg">
-                    <img src="images/collections/outdoors/general10.jpg">
-                    <img src="images/collections/outdoors/general11.jpg">
-                    <img src="images/collections/outdoors/general12.jpg">
-                    <img src="images/collections/outdoors/general13.jpg">
-                    <img src="images/collections/outdoors/general14.jpg">
-                    <img src="images/collections/outdoors/general15.jpg">
-                    <img src="images/collections/outdoors/general16.jpg">
-                    <img src="images/collections/outdoors/general17.jpg">
-                    <img src="images/collections/outdoors/general18.jpg">
-                    <img src="images/collections/outdoors/general19.jpg">
-                    <img src="images/collections/outdoors/general20.jpg">
-                    <img src="images/collections/outdoors/general21.jpg">
-                    <img src="images/collections/outdoors/general22.jpg">
-                    <img src="images/collections/outdoors/general23.jpg">
-                    <img src="images/collections/outdoors/general24.jpg">
-                </div>
-                <div class="column">
-                    <img src="images/collections/outdoors/ocean1.jpg">
-                    <img src="images/collections/outdoors/ocean2.jpg">
-                    <img src="images/collections/outdoors/ocean3.jpg">
-                    <img src="images/collections/outdoors/ocean4.jpg">
-                    <img src="images/collections/outdoors/ocean5.jpg">
-                    <img src="images/collections/outdoors/ocean6.jpg">
-                    <img src="images/collections/outdoors/ocean7.jpg">
-                    <img src="images/collections/outdoors/ocean8.jpg">
-                    <img src="images/collections/outdoors/ocean9.jpg">
-                    <img src="images/collections/outdoors/ocean10.jpg">
-                    <img src="images/collections/outdoors/ocean11.jpg">
-                    <img src="images/collections/outdoors/ocean12.jpg">
-                    <img src="images/collections/outdoors/ocean13.jpg">
-                    <img src="images/collections/outdoors/ocean14.jpg">
-                    <img src="images/collections/outdoors/ocean15.jpg">
-                    <img src="images/collections/outdoors/ocean16.jpg">
-                    <img src="images/collections/outdoors/ocean17.jpg">
-                    <img src="images/collections/outdoors/ocean18.jpg">
-                    <img src="images/collections/outdoors/ocean19.jpg">
-                    <img src="images/collections/outdoors/ocean20.jpg">
-                    <img src="images/collections/outdoors/ocean21.jpg">
-                    <img src="images/collections/outdoors/ocean22.jpg">
-                    <img src="images/collections/outdoors/ocean23.jpg">
-                    <img src="images/collections/outdoors/ocean24.jpg">
+                <button onclick="one()">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/collections/outdoors/flowers1.jpg">
+                        <img src="images/collections/outdoors/flowers2.jpg">
+                        <img src="images/collections/outdoors/flowers3.jpg">
+                        <img src="images/collections/outdoors/flowers4.jpg">
+                        <img src="images/collections/outdoors/flowers5.jpg">
+                        <img src="images/collections/outdoors/flowers6.jpg">
+                        <img src="images/collections/outdoors/flowers7.jpg">
+                        <img src="images/collections/outdoors/flowers8.jpg">
+                        <img src="images/collections/outdoors/flowers9.jpg">
+                        <img src="images/collections/outdoors/flowers10.jpg">
+                        <img src="images/collections/outdoors/flowers11.jpg">
+                        <img src="images/collections/outdoors/general1.jpg">
+                        <img src="images/collections/outdoors/general2.jpg">
+                        <img src="images/collections/outdoors/general3.jpg">
+                        <img src="images/collections/outdoors/general4.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/outdoors/general5.jpg">
+                        <img src="images/collections/outdoors/general6.jpg">
+                        <img src="images/collections/outdoors/general7.jpg">
+                        <img src="images/collections/outdoors/general8.jpg">
+                        <img src="images/collections/outdoors/general9.jpg">
+                        <img src="images/collections/outdoors/general10.jpg">
+                        <img src="images/collections/outdoors/general11.jpg">
+                        <img src="images/collections/outdoors/general12.jpg">
+                        <img src="images/collections/outdoors/general13.jpg">
+                        <img src="images/collections/outdoors/general14.jpg">
+                        <img src="images/collections/outdoors/general15.jpg">
+                        <img src="images/collections/outdoors/general16.jpg">
+                        <img src="images/collections/outdoors/general17.jpg">
+                        <img src="images/collections/outdoors/general18.jpg">
+                        <img src="images/collections/outdoors/general19.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/outdoors/general20.jpg">
+                        <img src="images/collections/outdoors/general21.jpg">
+                        <img src="images/collections/outdoors/general22.jpg">
+                        <img src="images/collections/outdoors/general23.jpg">
+                        <img src="images/collections/outdoors/general24.jpg">
+                        <img src="images/collections/outdoors/ocean1.jpg">
+                        <img src="images/collections/outdoors/ocean2.jpg">
+                        <img src="images/collections/outdoors/ocean3.jpg">
+                        <img src="images/collections/outdoors/ocean4.jpg">
+                        <img src="images/collections/outdoors/ocean5.jpg">
+                        <img src="images/collections/outdoors/ocean6.jpg">
+                        <img src="images/collections/outdoors/ocean7.jpg">
+                        <img src="images/collections/outdoors/ocean8.jpg">
+                        <img src="images/collections/outdoors/ocean9.jpg">
+                        <img src="images/collections/outdoors/ocean10.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/collections/outdoors/ocean11.jpg">
+                        <img src="images/collections/outdoors/ocean12.jpg">
+                        <img src="images/collections/outdoors/ocean13.jpg">
+                        <img src="images/collections/outdoors/ocean14.jpg">
+                        <img src="images/collections/outdoors/ocean15.jpg">
+                        <img src="images/collections/outdoors/ocean16.jpg">
+                        <img src="images/collections/outdoors/ocean17.jpg">
+                        <img src="images/collections/outdoors/ocean18.jpg">
+                        <img src="images/collections/outdoors/ocean19.jpg">
+                        <img src="images/collections/outdoors/ocean20.jpg">
+                        <img src="images/collections/outdoors/ocean21.jpg">
+                        <img src="images/collections/outdoors/ocean22.jpg">
+                        <img src="images/collections/outdoors/ocean23.jpg">
+                        <img src="images/collections/outdoors/ocean24.jpg">
+                    </div>
                 </div>
                 <span onclick="this.parentElement.style.display='none'">x</span>
             </div>
             <div id="Other" class="tabcontent">
-                <div class="column">
-                    <img src="images/collections/other/crazy1.jpg">
-                    <img src="images/collections/other/crazy2.jpg">
-                    <img src="images/collections/other/crazy3.jpg">
-                    <img src="images/collections/other/crazy4.jpg">
-                    <img src="images/collections/other/crazy5.jpg">
-                    <img src="images/collections/other/crazy6.jpg">
-                    <img src="images/collections/other/crazy7.jpg">
-                    <img src="images/collections/other/crazy8.jpg">
-                    <img src="images/collections/other/crazy9.jpg">
-                    <img src="images/collections/other/crazy10.jpg">
-                    <img src="images/collections/other/crazy11.jpg">
-                    <img src="images/collections/other/crazy12.jpg">
+                <button onclick="one()">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/collections/other/crazy1.jpg">
+                        <img src="images/collections/other/crazy2.jpg">
+                        <img src="images/collections/other/crazy3.jpg">
+                        <img src="images/collections/other/crazy4.jpg">
+                        <img src="images/collections/other/crazy5.jpg">
+                        <img src="images/collections/other/crazy6.jpg">
+                        <img src="images/collections/other/crazy7.jpg">
+                        <img src="images/collections/other/crazy8.jpg">
+                        <img src="images/collections/other/crazy9.jpg">
+                        <img src="images/collections/other/crazy10.jpg">
+                        <img src="images/collections/other/crazy11.jpg">
+                        <img src="images/collections/other/crazy12.jpg">
+                    </div>
                 </div>
                 <span onclick="this.parentElement.style.display='none'">x</span>
             </div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
         </div>
         <footer>
             <p class="company_name">Meredith Pearl Photography &copy; 2022</p>
@@ -370,9 +398,9 @@
         }
 
         // Four images side by side
-        function four() {
+        function three() {
         for (i = 0; i < elements.length; i++) {
-            elements[i].style.flex = "25%";
+            elements[i].style.flex = "33%";
         }
         }
 
