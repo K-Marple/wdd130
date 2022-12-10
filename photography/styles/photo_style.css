@@ -239,6 +239,11 @@ footer a:hover {
     text-align: center;
 }
 
+.tabcontent span {
+    color: #594236;
+    cursor: pointer;
+}
+
 /* Image grid */
 .tabcontent button {
     background-color: #594236;
@@ -478,5 +483,13 @@ textarea {
 
     form {
         padding-bottom: 70px;
+    }
+
+    #myBtn {
+        font-size: 1em;
+    }
+
+    span {
+        font-size: 1em;
     }
 }
