@@ -130,7 +130,7 @@ footer a:hover {
 
 
 /* Collections page */
-#collections {
+#collection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -139,6 +139,7 @@ footer a:hover {
     grid-column: 2/3;
     color: #594236;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .places_img {
@@ -230,22 +231,35 @@ footer a:hover {
     grid-row: 4/5;
     display: none;
     padding: 6px 12px;
+    margin-top: 20px;
 }
 
 /* Image grid */
-.row {
+.tabcontent button {
+    background-color: #594236;
+    border: none;
+    color: #fbfefb;
+    font-family: "Itim", "Comic Neue", sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.tabcontent button.active {
+    background-color: #1a5e63;
+}
+
+.tabcontent .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
-.column {
+.tabcontent .column {
     flex: 50%;
-    max-width: 50%;
     padding: 0 4px;
 }
 
-.column img {
+.tabcontent .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
