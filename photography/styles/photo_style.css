@@ -467,20 +467,12 @@ textarea {
         max-width: 80%;
     }
 
-    p {
-        width: 80%;
-    }
-
-    h2 {
-        width: 80%;
-    }
-
-    #collection {
+    p, h1, h2, #collection {
         width: 80%;
     }
 
     .button {
-        font-size: 10px;
+        font-size: 12px;
         width: 70px;
     }
 
