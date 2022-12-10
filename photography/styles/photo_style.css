@@ -442,7 +442,7 @@ textarea {
         display: block;
         height: auto;
         font-size: .8em;
-        width: 80%;
+        width: 100%;
     }
 
     nav, footer {
@@ -459,7 +459,6 @@ textarea {
     }
 
     .wildflowers {
-        width: 80%;
         display: block;
         margin: 0 auto;
     }
@@ -469,7 +468,7 @@ textarea {
     }
 
     p, h1, h2, #collection {
-        width: 80%;
+        width: 100%;
     }
 
     .button {
