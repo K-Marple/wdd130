@@ -442,6 +442,7 @@ textarea {
         display: block;
         height: auto;
         font-size: .8em;
+        width: 80%;
     }
 
     nav, footer {
