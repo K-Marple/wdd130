@@ -478,4 +478,13 @@ textarea {
     #collection {
         width: 80%;
     }
+
+    .button {
+        font-size: 10px;
+        width: 70px;
+    }
+
+    form {
+        padding-bottom: 70px;
+    }
 }
