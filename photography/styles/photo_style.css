@@ -443,6 +443,11 @@ textarea {
 
 
 @media screen and (max-width: 900px) {
+    #content {
+        max-width: 900px;
+        width: 100%;
+    }
+
     #hero, .about, #title, #form, #crazy {
         display: block;
         height: auto;
@@ -473,7 +478,8 @@ textarea {
     }
 
     p, h1, h2, #collection {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .button {
